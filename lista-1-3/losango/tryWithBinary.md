@@ -19,19 +19,13 @@ data = data[:math.floor(len(data)*0.8)]
 testDataLabels = dataLabels[math.floor(len(dataLabels)*0.8):]
 dataLabels = dataLabels[:math.floor(len(dataLabels)*0.8)]
 dataset = tensorflow.data.Dataset.from_tensor_slices((data, dataLabels))
-data
+len(data)
 ```
 
 
 
 
-    array([[-1.20541082,  1.13927856],
-           [ 0.61022044, -0.5260521 ],
-           [-1.15130261, -1.07915832],
-           ...,
-           [ 0.42985972, -0.33967936],
-           [ 0.70641283,  0.5741483 ],
-           [ 0.64028056,  1.03106212]])
+    200000
 
 
 
